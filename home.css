@@ -120,6 +120,9 @@ select {
   }
 }
 
+a {
+    text-decoration: none;
+}
 
 /* ------------------- */
 /* Utility classes     */
@@ -316,7 +319,7 @@ select {
         transform: translateX(0);
     }
     
-    .primary-navigation.underline-indicators > .active {
+    .primary-navigation.underline-indicators > {
        border: 0;
     }
     
@@ -448,6 +451,23 @@ body {
     }
 } 
 
+/*Destination background images*/
+.destination {
+    background-image: url(./assets/destination/background-destination-mobile.jpg);
+}
+
+@media (min-width: 35rem) {
+    .destination {
+        background-position: center center;
+        background-image: url(./assets/destination/background-destination-tablet.jpg);
+    }
+}
+
+@media (min-width: 45rem) {
+    .destination {
+        background-image: url(./assets/destination/background-destination-desktop.jpg);
+    }
+}
 /* ----------------------------- */
 /* Layout                        */
 /* ----------------------------- */
